@@ -1,0 +1,169 @@
+- title: BBC 1Xtra
+  pips_id: bbc_1xtra
+  programmes_id: 1xtra
+  scheduler3_id: 1xtra
+  imda_id: r1x
+  imda_crid: crid://bbc.co.uk/a/r1x
+  redux_id: bbc1x
+  dab_id: 0.c22a.ce15.ce1.dab
+  start_freq:
+  end_freq:
+  countries:
+  pi:
+- title: BBC Asian Network
+  pips_id: bbc_asian_network
+  programmes_id: asiannetwork
+  scheduler3_id: asiannetwork
+  imda_id: asian
+  imda_crid: crid://bbc.co.uk/a/asian
+  redux_id: bbcan
+  dab_id: 0.c236.ce15.ce1.dab
+  start_freq:
+  end_freq:
+  countries:
+  pi:
+- title: BBC Radio 1
+  pips_id: bbc_radio_one
+  programmes_id: radio1
+  scheduler3_id: radio1
+  imda_id: r1
+  imda_crid: crid://bbc.co.uk/a/r1
+  redux_id: bbcr1
+  dab_id: 0.c221.ce15.ce1.dab
+  start_freq: 9700
+  end_freq: 9900
+  countries: [ce1, gb]
+  pi: c201
+- title: BBC Radio 2
+  pips_id: bbc_radio_two
+  programmes_id: radio2
+  scheduler3_id: radio2
+  imda_id: r2
+  imda_crid: crid://bbc.co.uk/a/r2
+  redux_id: bbcr2
+  dab_id: 0.c222.ce15.ce1.dab
+  start_freq: 8800
+  end_freq: 9100
+  countries: [ce1, gb]
+  pi: c202
+- title: BBC Radio 3
+  pips_id: bbc_radio_three
+  programmes_id: radio3
+  scheduler3_id: radio3
+  imda_id: r3
+  imda_crid: crid://bbc.co.uk/a/r3
+  redux_id: bbcr3
+  dab_id: 0.c223.ce15.ce1.dab
+  start_freq: 9000
+  end_freq: 9300
+  countries: [ce1, gb]
+  pi: c203
+- title: BBC Radio 4
+  pips_id: bbc_radio_fourfm
+  programmes_id: radio4/fm
+  scheduler3_id: radio4
+  imda_id: r4
+  imda_crid: crid://bbc.co.uk/a/r4
+  redux_id: bbcr4
+  dab_id: 0.c224.ce15.ce1.dab
+  start_freq: 9200
+  end_freq: 9500
+  countries: [ce1, gb]
+  pi: c204
+- title: BBC Radio 4 Extra
+  pips_id: bbc_radio_four_extra
+  programmes_id: radio4extra
+  scheduler3_id: radio4extra
+  imda_id: r4x
+  imda_crid: crid://bbc.co.uk/a/r4x
+  redux_id: bbc7
+  dab_id: 0.c22c.ce15.ce1.dab
+  start_freq:
+  end_freq:
+  countries:
+  pi:
+- title: BBC Radio 4 LW
+  pips_id: bbc_radio_fourlw
+  programmes_id: radio4/lw
+  scheduler3_id: radio4lw
+  imda_id: r4lw
+  imda_crid: crid://bbc.co.uk/a/r4lw
+  redux_id:
+  dab_id:
+  start_freq:
+  end_freq:
+  countries:
+  pi:
+- title: BBC Radio 5 Live
+  pips_id: bbc_radio_five_live
+  programmes_id: 5live
+  scheduler3_id: radio5live
+  imda_id: r5l
+  imda_crid: crid://bbc.co.uk/a/r5l
+  redux_id: bbcr5l
+  dab_id: 0.c225.ce15.ce1.dab
+  start_freq:
+  end_freq:
+  countries:
+  pi:
+- title: BBC Radio 5 Live Sports Extra
+  pips_id: bbc_radio_five_live_sports_extra
+  programmes_id: 5livesportsextra
+  scheduler3_id: sportsextra
+  imda_id: r5sx
+  imda_crid: crid://bbc.co.uk/a/r5sx
+  redux_id: r5lsx
+  dab_id: 0.c228.ce15.ce1.dab
+  start_freq:
+  end_freq:
+  countries:
+  pi:
+- title: BBC 6 Music
+  pips_id: bbc_6music
+  programmes_id: 6music
+  scheduler3_id: 6music
+  imda_id: 6mus
+  imda_crid: crid://bbc.co.uk/a/6mus
+  redux_id: bbc6m
+  dab_id: 0.c22b.ce15.ce1.dab
+  start_freq:
+  end_freq:
+  countries:
+  pi:
+- title: BBC Radio 7
+  pips_id: bbc_7
+  programmes_id: radio7
+  scheduler3_id: bbc7
+  imda_id: r7
+  imda_crid: crid://bbc.co.uk/a/r7
+  redux_id: bbc7
+  dab_id:
+  start_freq:
+  end_freq:
+  countries:
+  pi:
+- title: BBC World Service
+  pips_id: bbc_world_service
+  programmes_id: worldservice
+  scheduler3_id: worldservice
+  imda_id:
+  imda_crid:
+  redux_id:
+  dab_id: 0.c238.ce15.ce1.dab
+  start_freq:
+  end_freq:
+  countries:
+  pi:
+- title: School Radio
+  pips_id: bbc_school_radio
+  programmes_id: schoolradio
+  scheduler3_id:
+  imda_id:
+  imda_crid:
+  redux_id:
+  dab_id:
+  start_freq:
+  end_freq:
+  countries:
+  pi:
+
