@@ -8,21 +8,27 @@ module BBCRD
   class ServiceMap
     FILENAME = "services.yml"
     FIELDS = [
-              :title,           # Display title (perhaps need Short, Medium, Long from PIPs)
-              :pips_id,         # PIPs, PIT, ION/Dynamite/iPlayer canonical identifiers
-              :programmes_id,   # /programmes url-friendly identifiers
-              :scheduler3_id,   # LiveText, PushFeeds, etc.
-              :imda_id,         # Internet Media Device Alliance ID
-              :imda_crid,       # Internet Media Device Alliance CRID
-              :redux_id,        # BBC internal Redux
-              :dab_id           # RadioDNS DAB service identifier
-             ]
+      :title,           # Display title (perhaps need Short, Medium, Long from PIPs)
+      :pips_id,         # PIPs, PIT, ION/Dynamite/iPlayer canonical identifiers
+      :programmes_id,   # /programmes url-friendly identifiers
+      :scheduler3_id,   # LiveText, PushFeeds, etc.
+      :imda_id,         # Internet Media Device Alliance ID
+      :imda_crid,       # Internet Media Device Alliance CRID
+      :redux_id,        # BBC internal Redux
+      :dab_id,          # RadioDNS DAB service identifier
+      :sort_order,      # Ordinal position in list
+      :regional         # any miscellaneous extra ids (list)
+    ]
 
     class Service
       FIELDS.each do |field|
         attr_reader field
       end
       attr_reader :fm_parameters # RadioDNS FM service parameters
+
+      def sort_order=(index)
+        @sort_order = index
+      end
 
       def initialize(params)
         # normalize params
@@ -61,9 +67,12 @@ module BBCRD
         service_map = { }
 
         # index each service by all of its identifiers
-        service_list.each do |service|
+        service_list.each_with_index do |service, index|
+          service.sort_order = index
           FIELDS.each do |attr|
-            service_map[service.send(attr)] = service
+            [service.send(attr)].flatten.each do |value|
+              service_map[value] = service
+            end
           end
           service.fm_parameters.each do |fm|
             service_map[fm] = service
@@ -86,8 +95,13 @@ end
 
 if __FILE__ == $0
   require 'pp'
-  # pp BBCRD::ServiceMap::SERVICE_MAP
-  pp BBCRD::ServiceMap.lookup("bbcr1")
-  pp BBCRD::ServiceMap["radio4"].fm_parameters
-  pp BBCRD::ServiceMap["1xtra"].title
+  if name = ARGV.shift
+    pp BBCRD::ServiceMap[name]
+  else
+    # pp BBCRD::ServiceMap::SERVICE_MAP
+    pp BBCRD::ServiceMap.lookup("bbcr1")
+    pp BBCRD::ServiceMap["radio4"].fm_parameters
+    pp BBCRD::ServiceMap["1xtra"].title
+    pp BBCRD::ServiceMap["bbc_two"]
+  end
 end

@@ -70,6 +70,8 @@
   end_freq: 9500
   countries: [ce1, gb]
   pi: c204
+  regional:
+    - bbc_radio_four
 - title: BBC Radio 4 Extra
   pips_id: bbc_radio_four_extra
   programmes_id: radio4extra
@@ -166,4 +168,35 @@
   end_freq:
   countries:
   pi:
-
+- title: BBC One
+  pips_id: bbc_one
+  programmes_id: bbcone
+  redux_id: bbcone
+  regional:
+    - bbc_one_london
+- title: BBC Two
+  pips_id: bbc_two
+  programmes_id: bbctwo
+  redux_id: bbctwo
+  regional:
+    - bbc_two_england
+- title: BBC Three
+  pips_id: bbc_three
+  programmes_id: bbcthree
+  redux_id: bbcthree
+- title: BBC Four
+  pips_id: bbc_four
+  programmes_id: bbcfour
+  redux_id: bbcfour
+- title: CBBC
+  pips_id: cbbc
+  programmes_id: cbbc
+  redux_id: cbbc
+- title: CBeebies
+  pips_id: cbeebies
+  programmes_id: cbeebies
+  redux_id: cbeebies
+- title: BBC News Channel
+  pips_id: bbc_news
+  programmes_id: bbcnews
+  redux_id: bbcnews24
